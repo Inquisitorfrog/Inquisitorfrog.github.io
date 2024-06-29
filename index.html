@@ -2,32 +2,64 @@
 <html> <!-- Root element, wraps entire content-->
     <head> <!--include all data that isn't shown on the website, like keyword for search and name of browser tag-->
         <title>My portfolio</title>
-        <!-- <link href="styling.css" rel = "stylesheet"/> links css with html file.-->
+        <link href="resources/css/index.css" rel = "stylesheet"/> <!-- links css with html file.-->
     </head>
     <body> <!-- Contains all elements that are displayed-->
         <main>
-            <h1 class="important-text" id="Main-text"> Portfolio site of Matias</h1>
+                <h1>Portfolio site of Matias</h1>            
 
-            <section>
-                <h2 class="introduction">About me:</h2>
-                <img style="width: 100px;"id="matias_picture" src="matias_picture.jpg" alt ="creator of website"/>
-                <p>latin words latin words latin words </p>
+            <section id="about-me">
+                <h2>About me:</h2>
+                <table>
+                    <tr>
+                        <td><img id="matias_picture" src="resources/matias_picture.jpg" alt ="creator of website"/></td>
+                        <td><p>My name is Matias Eriksson, I'm currently studying computer science at KTH, soon going to start my final year (fifth year). </p></td>
+                        <td> <h2 class="important-text"><a href="https://www.linkedin.com/in/matias-eriksson-18b9381b4/">linkedin</a></h2></td>
+                    </tr>
+                </table>
+               
+                
+                
             </section>
+            <section  id="frogSection">
+                
+                <table>
+                    <tr>
+                        <th>Cool frog pictures:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="resources/froggo.jpg" alt="epic frog"/>
+                        </td>
+                        <td>
+                            <img src="resources/Frog_on_bough.jpg" alt="epic frog"/>
+                        </td>
 
-            <h2 class="important-text"><a href="https://www.linkedin.com/in/matias-eriksson-18b9381b4/">linkedin</a></h2>
-            <p>This guy be wildin'</p>
-            <img src="froggo.jpg" alt="epic frog"/>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="resources/Hyperolius_kivuensis.jpg" alt="epic frog"/>
+                        </td>
+                        <td>
+                            <img src="resources/Mississippi_gopher_frog.jpg" alt="epic frog"/>
+                        </td>
+                    </tr>
+                    
+                </table>
 
-            
-            <h3 class="important-text">Todo with this site</h3>
-            <ul>
-                <li>Get familiar html,css and javascript to make site look better.</li>
-                <li>Create minigame with help of javascript</li>
-                <li>learn about databases, create accounts for site, leaderboard for game</li>
-                <li>experience in git and github</li>
-            </ul>
-        
+            </section>
+            <section id="list-section">
+                <h3 class="important-text">Purpose with this site</h3>
+                <ul>
+                    <li>Get familiar html,css and javascript.</li>
+                    <li>Create minigame with help of javascript</li>
+                    <li>learn about databases, create accounts for site, leaderboard for game</li>
+                    <li>Gain experience in git and github</li>
+                </ul>
+            </section>      
+
         </main>
+
         <footer>
             <p>Author: Matias Eriksson, Email: matias.eriksson10@gmail.com</p>
         </footer>
