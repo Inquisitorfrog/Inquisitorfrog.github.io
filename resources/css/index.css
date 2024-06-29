@@ -1,0 +1,91 @@
+/*significance of selector
+element selector
+ID selector #
+Class selector .
+Attribute selector img[src] < example when selecting an image with the source src
+Pseudo-class selector a:hover <--selects a but only when mouse hovering over
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(255, 164, 61);
+    font-size: 100px;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    background-color:darkgray
+    
+}
+
+footer{
+    background-color: orange;
+    
+}
+
+#about-me{
+    background-color: grey;
+    width: 80%;
+    margin-top: 20px;
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px;
+    border: 20px solid whitesmoke;
+
+    }
+
+
+a{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color:red;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+a:hover{
+    background-color: whitesmoke;
+    color:grey;
+    border: 2px solid red;
+    border-radius: 2px;
+}
+
+#frogSection{
+    width: 80%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+#frogSection img{
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+}
+
+#matias_picture{
+    width: 100px;
+}
+
+#list-section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#list-section ul{
+    margin-left: 20px;
+}
