@@ -9,47 +9,31 @@
     </head>
     <body> <!-- Contains all elements that are displayed-->
         <main>
-                <h1>Portfolio site of Matias</h1>            
+            <header>
+                <h1>Portfolio site of Matias</h1>    
+                <nav>
+                    <a class="navigation" href="#about-me">About me</a>
+                    <a class="navigation" href="#gallery">Gallery</a>
+                </nav>    
+            </header>    
 
             <section id="about-me">
-                <h2>About me:</h2>
-                <table>
-                    <tr>
-                        <td><img id="matias_picture" src="resources/matias_picture.jpg" alt ="creator of website"/></td>
-                        <td><p>My name is Matias Eriksson, I'm currently studying computer science at KTH, soon going to start my final year (fifth year). </p></td>
-                        <td> <h2 class="important-text"><a href="https://www.linkedin.com/in/matias-eriksson-18b9381b4/">linkedin</a></h2></td>
-                    </tr>
+                <div class="noShrink">
+                    <h2>About me:</h2>
+                    <td><img id="matias_picture" src="resources/matias_picture.jpg" alt ="creator of website"/></td>
+                </div>
+                <p>My name is Matias Eriksson, I'm currently studying computer science at KTH, soon going to start my final year (fifth year). </p></td>
+                <h2 class="noShrink"><a id="linkedin" href="https://www.linkedin.com/in/matias-eriksson-18b9381b4/">Linkedin</a></h2>
                 </table>
-               
-                
-                
             </section>
-            <section  id="frogSection">
-                
-                <table>
-                    <tr>
-                        <th><h2>Cool frog pictures:</h2></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="resources/froggo.jpg" alt="epic frog"/>
-                        </td>
-                        <td>
-                            <img src="resources/Frog_on_bough.jpg" alt="epic frog"/>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="resources/Hyperolius_kivuensis.jpg" alt="epic frog"/>
-                        </td>
-                        <td>
-                            <img src="resources/Mississippi_gopher_frog.jpg" alt="epic frog"/>
-                        </td>
-                    </tr>
-                    
-                </table>
-
+            <section  id="gallery">
+                <h2>Gallery:</h2>
+                <div>
+                    <img src="resources/froggo.jpg" alt="epic frog"/>
+                    <img src="resources/Frog_on_bough.jpg" alt="epic frog"/>
+                    <img src="resources/Hyperolius_kivuensis.jpg" alt="epic frog"/>
+                    <img src="resources/Mississippi_gopher_frog.jpg" alt="epic frog"/>
+                </div>
             </section>
             <section id="list-section">
                 <h3 class="important-text">Purpose with this site</h3>
