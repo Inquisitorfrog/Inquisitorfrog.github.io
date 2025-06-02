@@ -1,54 +1,102 @@
 <!DOCTYPE html>
-<html> <!-- Root element, wraps entire content-->
-    <head> <!--include all data that isn't shown on the website, like keyword for search and name of browser tag-->
-        <title>My portfolio</title>
-        <link href="resources/css/index.css" rel = "stylesheet"/> <!-- links css with html file.-->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<html>
+    <head>
+        <title>Matias Eriksson's summer thesis site</title>
+        <link href="./resources/css/index.css" rel="stylesheet">
     </head>
-    <body> <!-- Contains all elements that are displayed-->
-        <main>
-            <header>
-                <h1>Portfolio site of Matias</h1>    
+    <body>
+        <section id="midBackground">
+        <header>
+            <section id="introduction">
+                <h1 class="title">Portfolio summer project</h1>
+                <h2>By: Matias Eriksson</h2>
+                <p>Greetings!</p>
+                <p>This website is my summer project. It's purpose is to showcase the development of my master's thesis until its completion in August while allowing me too learn more about web development.</p>
+                <p>Updates will arrive weekly with new information in regards to the thesis and also new functionality of the site.</p>
+                <p> Welcome!</p>
                 <nav>
-                    <a class="navigation" href="#about-me">About me</a>
-                    <a class="navigation" href="#gallery">Gallery</a>
-                </nav>    
-            </header>    
-
-            <section id="about-me">
-                <div class="noShrink">
-                    <h2>About me:</h2>
-                    <td><img id="matias_picture" src="resources/matias_picture.jpg" alt ="creator of website"/></td>
-                </div>
-                <p>My name is Matias Eriksson, I'm currently studying computer science at KTH, soon going to start my final year (fifth year). </p></td>
-                <h2 class="noShrink"><a id="linkedin" href="https://www.linkedin.com/in/matias-eriksson-18b9381b4/">Linkedin</a></h2>
-                </table>
+                    <a href="#timetable"><p>Master's thesis timetable</p></a>
+                    <a href="#functionalityToAdd"><p>Functionality to 
+                    add</p></a>
+                </nav>
             </section>
-            <section  id="gallery">
-                <h2>Gallery:</h2>
-                <div>
-                    <img src="resources/froggo.jpg" alt="epic frog"/>
-                    <img src="resources/Frog_on_bough.jpg" alt="epic frog"/>
-                    <img src="resources/Hyperolius_kivuensis.jpg" alt="epic frog"/>
-                    <img src="resources/Mississippi_gopher_frog.jpg" alt="epic frog"/>
-                </div>
-            </section>
-            <section id="list-section">
-                <h3 class="important-text">Purpose with this site</h3>
-                <ul>
-                    <li>Get familiar html,css and javascript.</li>
-                    <li>Create minigame with help of javascript</li>
-                    <li>learn about databases, create accounts for site, leaderboard for game</li>
-                    <li>Gain experience in git and github</li>
-                </ul>
-            </section>      
 
+        </header>
+        <main>
+            <section>
+                <article>
+                    <table id="timetable">
+                        <thead>
+                            <tr>
+                                <th>WEEK</th>
+                                <th><p>Master's thesis summer timetable:</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>23</td>
+                                <td><p>Deepen research of AMR movement systems and obstacle detection to tie study closer to reality</p></td>
+                            </tr>
+                           <tr>
+                                <td><p>24</p></td>
+                                <td><p>Iterate on methodology, acquire 3D assets for simulation environment</p></td>
+                           </tr>
+                           <tr>
+                                <td><p>25</p></td>
+                                <td><p>AMR updated movement system implementation + improved scenario metric logic, modular code </p></td>
+                                
+                           </tr>
+                           <tr>
+                                <td><p>26</p></td>
+                                <td><p>Midsummer! Vacation</p></td>
+                           </tr>
+                           <tr>
+                                <td><p>27</p></td>
+                                <td><p>Collision avoidance algorithms overhaul, maximize use of inheritance for methods</p></td>
+                           </tr>                           
+                           <tr>
+                                <td><p>28</p></td>
+                                <td><p>Run simulations, gather & analyze data</p></td>
+                           </tr>                            
+                           <tr>
+                                <td><p>29</p></td>
+                                <td>Writing report, results and discussion</td>
+                           </tr> 
+                            <tr>
+                                <td><p>30</p></td>
+                                <td>Writing report, hand in first full draft</td>
+                           </tr> 
+                           <tr>
+                                <td><p>31</p></td>
+                                <td><p>Improve report from feedback</p></td>                                
+                           </tr> 
+                            <tr>
+                                <td><p>32</p></td>
+                                <td><p>Go through presentation</p></td>                                
+                           </tr> 
+                           <tr>
+                                <td><p>33</p></td>
+                                <td><p>Presentation!</p></td>
+                           </tr> 
+                        </tbody>
+                    </table>
+                </article>
+                <article id="functionalityToAdd">
+                    <h2>Website functionality to be added (subject to change):</h2>
+                    <ul>
+                        <li><p>dynamic functionality with javascript</p></li>
+                        <li><p>Incorporating react for a more modular interface</p></li>
+                        <li>Three-in-a-row minigame</li>
+                    </ul>
+                </article>
+
+            </section>
         </main>
-
         <footer>
-            <p>Author: Matias Eriksson, Email: matias.eriksson10@gmail.com</p>
+            <h5>Contact information:</h5>
+            <p>Email: matias.eriksson10@gmail.com</p>
+            <p>LinkedIn: www.linkedin.com/in/matias-eriksson-18b9381b4</p>
         </footer>
+        </section>
     </body>
 </html>
