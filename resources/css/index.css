@@ -11,6 +11,12 @@ USE 3 colors
 #8E8D8A
 
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body{
     text-align: center;
@@ -21,10 +27,64 @@ body{
     background-size: cover;
 }
 
+#midBackground{
+
+    width: 50%;
+    background-color: #8E8D8A;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 2px solid yellowgreen;
+}
+
+
+.introduction{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.introduction article{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.navigationalLinks {
+
+    width: 90%;
+    margin: 10px auto;
+}
+
+.navigationalLinks p{
+    display: inline-block;
+    margin: 10px 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color:orange;
+}
+
+a:active{
+    color:grey
+}
 
 table{
-    display: inline-block;
+    width: 90%;
+    margin: 20px auto;
     border: 5px solid #EDE8F5;
+    border-radius: 5px;
     border-spacing: 0px;
     font-family: sans-serif;
     color: greenyellow;
@@ -33,52 +93,44 @@ table{
 table td,th{
     background-color:#8E8D8A;
     border: 2px solid #EDE8F5;
-}
-article{
-    text-align: center;
-}
-ul{
-    display: inline-block;
-    text-align: left;
+    padding: 10px;
 }
 
-#midBackground{
-    display: inline-block;
+.functionalityToAdd{
     width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.functionalityToAdd ul{
+    width: 90%;
+    margin: 20px auto;
+}
+.functionalityToAdd ul li{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0px;
     background-color: #8E8D8A;
-    border-radius: 10px;
+    list-style: none;
+    border-radius: 5px;
 }
 
-#introduction{
-    width: 50%;
-    display: inline-block;
-}
+
+
+
 
 footer{
-    display: inline-block;
+    margin-top: 20px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 footer p{
-    width: auto;
-    display: block;
-    text-align: left;
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
 }
-
-
-a p{
-    background-color: white;
-    color:grey;;
-    text-decoration: none;
-    display: block;
-}
-
-a p:hover{
-    background-color: grey;
-    color:white;
-}
-
-a p:active{
-    color:greenyellow
-}
-
-a{text-decoration: none;}
