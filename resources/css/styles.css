@@ -1,0 +1,136 @@
+/*significance of selector
+element selector
+ID selector #
+Class selector .
+Attribute selector img[src] < example when selecting an image with the source src
+Pseudo-class selector a:hover <--selects a but only when mouse hovering over
+
+USE 3 colors
+#EDE8F5
+#376E6F
+#8E8D8A
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    text-align: center;
+    background-color: #376E6F;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../IMG_4626.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#midBackground{
+
+    width: 50%;
+    background-color: #8E8D8A;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 2px solid yellowgreen;
+}
+
+
+.introduction{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.introduction article{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.navigationalLinks {
+
+    width: 90%;
+    margin: 10px auto;
+}
+
+.navigationalLinks p{
+    display: inline-block;
+    margin: 10px 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color:orange;
+}
+
+a:active{
+    color:grey
+}
+
+table{
+    width: 90%;
+    margin: 20px auto;
+    border: 5px solid #EDE8F5;
+    border-radius: 5px;
+    border-spacing: 0px;
+    font-family: sans-serif;
+    color: greenyellow;
+
+}
+table td,th{
+    background-color:#8E8D8A;
+    border: 2px solid #EDE8F5;
+    padding: 10px;
+}
+
+.functionalityToAdd{
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.functionalityToAdd ul{
+    width: 90%;
+    margin: 20px auto;
+}
+.functionalityToAdd ul li{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0px;
+    background-color: #8E8D8A;
+    list-style: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+footer{
+    margin-top: 20px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer p{
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
+}
