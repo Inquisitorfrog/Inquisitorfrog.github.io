@@ -96,7 +96,7 @@ table td,th{
     padding: 10px;
 }
 
-.functionalityToAdd{
+#functionalityToAdd{
     width: 50%;
     margin: 0 auto;
     background-color: white;
@@ -104,11 +104,11 @@ table td,th{
     padding: 10px;
 }
 
-.functionalityToAdd ul{
+#functionalityToAdd ul{
     width: 90%;
     margin: 20px auto;
 }
-.functionalityToAdd ul li{
+#functionalityToAdd ul li{
     width: 100%;
     margin: 10px auto;
     padding: 10px 0px;
@@ -118,7 +118,24 @@ table td,th{
 }
 
 
+.thesisInfo{
+    margin: 20px auto;
+    display: inline-block;
+    width: 100%;
 
+}
+
+.thesisContainer{
+    margin: 20px auto;
+    width: 80%;
+    display: inline-block;
+}
+
+.thesisContainer img{
+    width: 100%;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+}
 
 
 footer{
@@ -133,4 +150,8 @@ footer p{
     margin: 20px auto;
     text-align: center;
     display: inline-block;
+}
+
+.completed{
+    background-color: greenyellow;
 }
