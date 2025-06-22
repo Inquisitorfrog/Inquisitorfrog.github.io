@@ -22,6 +22,7 @@ body{
     text-align: center;
     background-color: #376E6F;
     font-family: 'Courier New', Courier, monospace;
+    margin: auto, 0;
     background-image: url("IMG_4626.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +61,7 @@ body{
 .navigationalLinks p{
     display: inline-block;
     margin: 10px 5px;
-    background-color: white;
+    background-color: greenyellow;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -154,4 +155,13 @@ footer p{
 
 .completed{
     background-color: greenyellow;
+}
+
+main{
+    height: 800px;
+}
+
+.siteScreenshot{
+    width: 80%;
+    border: greenyellow,solid, 5px;
 }

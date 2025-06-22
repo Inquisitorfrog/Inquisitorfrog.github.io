@@ -3,14 +3,15 @@
     <head>
         <title>Matias Eriksson's summer thesis site</title>
         <link href="./styles.css" rel="stylesheet">
+        <script src="./scripts.js"></script>
     </head>
     <body>
         <section id="midBackground">
         <header class = "introduction">
             <section class = "webSiteInfo">
-                <h1 class="title">Portfolio summer project</h1>
+                <h1 id="title" onclick="changeHeaderColor();">Portfolio summer project</h1>
                 
-                <h2>By: Matias Eriksson</h2>
+                <h2 onclick="greetUser();">By: Matias Eriksson</h2>
                 <article>
                     <br>
                     <p>Greetings!</p>
@@ -37,15 +38,14 @@
             </section>
             
             <nav class="navigationalLinks">
-                <p><a href="#timetable">Master's thesis timetable</a></p>
-                <p><a href="#functionalityToAdd">Functionality to add</a></p>
+                <p><a onclick="changeContent()" id="contentButton">Features to Add</a></p>
             </nav>
 
         </header>
         <main>
             <section>
-                <article>
-                    <table id="timetable">
+                <article id="timetable">
+                    <table>
                         <thead>
                             <tr>
                                 <th>WEEK</th>
@@ -55,20 +55,23 @@
                         <tbody>
                             <tr class="completed">
                                 <td>23</td>
-                                <td><p>Deepen research of AMR movement systems and obstacle detection to tie study closer to reality</p></td>
+                                <td><p>Deepen research of AMR movement systems and obstacle detection to tie study closer to reality</p>
+                                <p><em>COMPLETED:</em> Have found more sources tied to evaluation metrics for collision avoidance algorithms, omnidirectional movement of AMRs and sensors that AMRs utilize such as Lidar.</p></td>
                             </tr>
                            <tr>
                                 <td><p>24</p></td>
-                                <td><p>Iterate on methodology, acquire 3D assets for simulation environment</p></td>
+                                <td><p>AMR updated movement system implementation + improved scenario metric logic, modular code </p>
+                                <p><em>COMPLETED:</em> Movement system has been modularized, a script handles the movement system of the agent while another handles the calculation of what action to choose, prior both were in the same script. Simulation menu has been improved to allow for agent selection and parameter change without having to change values in code. All simulation logic is now handled from the simulationController where listeners are utilized to record metrics such as collisions.
+                                </p></td>
                            </tr>
                            <tr>
                                 <td><p>25</p></td>
-                                <td><p>AMR updated movement system implementation + improved scenario metric logic, modular code </p></td>
-                                
+                                <td><p>Midsummer! Vacation</p></td>
                            </tr>
                            <tr>
                                 <td><p>26</p></td>
-                                <td><p>Midsummer! Vacation</p></td>
+                                <td><p>Iterate on methodology, acquire 3D assets for simulation environment</p></td>
+
                            </tr>
                            <tr>
                                 <td><p>27</p></td>
@@ -101,7 +104,7 @@
                         </tbody>
                     </table>
                 </article>
-                <article id="functionalityToAdd">
+                <article id="functionalityToAdd" hidden="true">
                     <h2>Website functionality to be added (subject to change):</h2>
                     <ul>
                         <li><p>dynamic functionality with javascript</p></li>
@@ -113,6 +116,13 @@
 
             </section>
         </main>
+        <section id="previous versions">
+            <h2>Previous versions of site</h2>
+            <h3>Week 1</h3>
+            <img class="siteScreenshot" src="./screenshots/firstSiteVersion.png"/>
+            <h3>Week 2</h3>
+            <img class="siteScreenshot" src="./screenshots/secondSiteVersion.png"/>
+        </section>
         <footer>
             <h5>Contact information:</h5>
             <p>Email: matias.eriksson10@gmail.com</p>
